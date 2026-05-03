@@ -10,6 +10,7 @@ import 'aos/dist/aos.css';
 import MainLayout from './layout/MainLayout.tsx';
 import HomePage from './pages/HomePage.tsx';
 import ProductsPage from './pages/ProductsPage.tsx';
+import ScrollToTop from './components/ScrollToTop.tsx';
 
 export default function App() {
   useEffect(() => {
@@ -22,6 +23,7 @@ export default function App() {
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<HomePage />} />
