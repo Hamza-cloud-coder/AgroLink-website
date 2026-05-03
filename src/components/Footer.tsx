@@ -1,5 +1,6 @@
 
 import { Mail, Facebook, Instagram, ArrowUp } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -29,11 +30,11 @@ export default function Footer() {
           <div>
             <h4 className="font-bold mb-6 uppercase tracking-wider text-white/70">Links</h4>
             <ul className="space-y-4 text-white text-lg">
-              <li><a href="#">About</a></li>
-              <li><a href="#">Our Services</a></li>
-              <li><a href="#">Why AgroLink</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Start Now</a></li>
+              <li><Link to="/#about">About</Link></li>
+              <li><Link to="/products">Our Services</Link></li>
+              <li><Link to="/#why">Why AgroLink</Link></li>
+              <li><Link to="/#faq">FAQ</Link></li>
+              <li><a href="https://wa.me/61459771636">Start Now</a></li>
             </ul>
           </div>
           <div>
@@ -57,11 +58,11 @@ export default function Footer() {
 
         {/* Bottom: Copyright and links */}
         <div className="flex flex-col pt-8 border-t border-white/20 text-white/80 text-base gap-8">
-          <p>© 2025 AgroLink. All rights reserved.</p>
+          <p>© 2026 AgroLink. All rights reserved.</p>
           <div className="flex flex-wrap gap-6">
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Cookies</a>
+            <Link to="/terms">Terms & Conditions</Link>
+            <Link to="/privacy">Privacy Policy</Link>
+            <Link to="/cookies">Cookies</Link>
           </div>
           <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex items-center gap-2 bg-yellow-400 text-black px-6 py-3 rounded-full font-bold w-fit">
             <ArrowUp className="w-5 h-5" /> Back To Top

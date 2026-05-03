@@ -4,6 +4,7 @@ import { Eye, Users, RefreshCw } from 'lucide-react';
 export default function Platform() {
   return (
     <section 
+      id="why"
       data-aos="fade-up"
       className="bg-white py-16 md:py-32 px-6 md:px-12 overflow-hidden"
     >
@@ -19,7 +20,7 @@ export default function Platform() {
           <div className="relative order-2 lg:order-1" data-aos="fade-right">
             <div className="rounded-lg overflow-hidden aspect-video shadow-2xl">
               <img className="w-full h-full object-cover" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLhr-8U_Ahp8LL3rTkjCkFGMy83N6reg7xW8t8q46VhONhjHWpx7kDzPowQL6_1Yg0LDvNeAW0VcDvvx99bE3DLM0isckzMoJgrxxPzAyFe2Q9O05IqZhWpomTNc-Un3St23QsnJsoUm3eI5k9mr0W1yxm_bnhk_qpa0cycMu2_3aDODKHy9EzDmqZ2JBeG39dE--gX9EeRwtNJI2fwRbMYjy_crVtbeCbm226IelxJ1DuWG440uc-w9ujXM5zrkMU6KVL4L4j6v8"
+                src="/assets/i.jpg"
                 alt="Agricultural Platform"
               />
             </div>
@@ -27,19 +28,19 @@ export default function Platform() {
           </div>
           <div className="order-1 lg:order-2 flex flex-col items-center lg:items-start text-center lg:text-left space-y-8 md:space-y-12" data-aos="fade-left">
             <div className="space-y-4 md:space-y-8" data-aos="fade-up">
-              <Eye className="w-10 h-10 text-primary mx-auto lg:mx-0 mb-4" />
-              <h4 className="text-lg md:text-2xl font-medium text-primary">Maximum Brand Visibility</h4>
-              <p className="text-base md:text-lg text-on-surface-variant">Your profile is your digital passport. Showcase your certifications, awards, and production capacity to buyers.</p>
-            </div>
-            <div className="space-y-4 md:space-y-8 pt-8 md:pt-12 border-t border-gray-200" data-aos="fade-up">
               <Users className="w-10 h-10 text-primary mx-auto lg:mx-0 mb-4" />
-              <h4 className="text-lg md:text-2xl font-medium text-primary">Verified Community</h4>
-              <p className="text-base md:text-lg text-on-surface-variant">Eliminate non-serious inquiries. We use advanced verification to ensure you negotiate only with legitimate companies and registered farms.</p>
+              <h4 className="text-lg md:text-2xl font-medium text-primary">Bridging Farmers and Buyers</h4>
+              <p className="text-base md:text-lg text-on-surface-variant">We connect Tanzanian farmers and local suppliers directly to a wide network of domestic and international buyers.</p>
             </div>
             <div className="space-y-4 md:space-y-8 pt-8 md:pt-12 border-t border-gray-200" data-aos="fade-up">
               <RefreshCw className="w-10 h-10 text-primary mx-auto lg:mx-0 mb-4" />
-              <h4 className="text-lg md:text-2xl font-medium text-primary">Hybrid Sales Model</h4>
-              <p className="text-base md:text-lg text-on-surface-variant">Flexibility is key – sell a pallet to a wholesaler or a gift pack to a final consumer. All managed through a single, unified inventory system.</p>
+              <h4 className="text-lg md:text-2xl font-medium text-primary">Streamlined Agricultural Trade</h4>
+              <p className="text-base md:text-lg text-on-surface-variant">We simplify the supply chain by integrating our digital marketplace with end-to-end logistics coordination.</p>
+            </div>
+            <div className="space-y-4 md:space-y-8 pt-8 md:pt-12 border-t border-gray-200" data-aos="fade-up">
+              <Eye className="w-10 h-10 text-primary mx-auto lg:mx-0 mb-4" />
+              <h4 className="text-lg md:text-2xl font-medium text-primary">Scaling for the Future</h4>
+              <p className="text-base md:text-lg text-on-surface-variant">We are rapidly expanding our digital platform and supplier networks to facilitate cross-border exports.</p>
             </div>
           </div>
         </div>

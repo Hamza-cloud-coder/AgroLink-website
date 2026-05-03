@@ -65,14 +65,14 @@ export default function Hero() {
       >
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-0 bg-white rounded-3xl overflow-hidden shadow-2xl">
             {[
-                { label: 'Farmers and Cultivators', value: '54K' },
-                { label: 'Collaborations', value: '120+' },
-                { label: 'Years of Experience', value: '60+' },
+                { label: 'Farmers Joined', value: '500+' },
+                { label: 'Local Partnerships', value: '25+' },
+                { label: 'Startup Year', value: '2026' },
             ].map((stat, i) => (
                 <div key={i} className="p-8 md:p-10 border-b sm:border-b-0 sm:border-r border-outline-variant/30 last:border-r-0 text-center sm:text-left">
                     <div className="text-4xl md:text-[52px] font-black text-primary-container leading-none mb-4">{stat.value}</div>
                     <p className="text-xs font-semibold text-on-surface-variant uppercase tracking-wider mb-2">{stat.label}</p>
-                    <p className="text-xs text-on-surface-variant/70">Embracing the future of precision agriculture with Agridev technology.</p>
+                    <p className="text-xs text-on-surface-variant/70">Building a more transparent and efficient agricultural supply chain from day one.</p>
                 </div>
             ))}
         </div>

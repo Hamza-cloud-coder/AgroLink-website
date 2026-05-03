@@ -26,6 +26,7 @@ export default function FAQ() {
 
   return (
     <section 
+      id="faq"
       data-aos="fade-up"
       className="bg-surface py-16 md:py-32 px-6 md:px-12"
     >

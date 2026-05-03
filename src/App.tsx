@@ -4,15 +4,12 @@
  */
 
 import { useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Header from './components/Header.tsx';
-import Hero from './components/Hero.tsx';
-import About from './components/About.tsx';
-import Platform from './components/Platform.tsx';
-import Testimonials from './components/Testimonials.tsx';
-import FAQ from './components/FAQ.tsx';
-import Footer from './components/Footer.tsx';
+import MainLayout from './layout/MainLayout.tsx';
+import HomePage from './pages/HomePage.tsx';
+import ProductsPage from './pages/ProductsPage.tsx';
 
 export default function App() {
   useEffect(() => {
@@ -24,14 +21,13 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background text-on-surface">
-      <Header />
-      <Hero />
-      <About />
-      <Platform />
-      <Testimonials />
-      <FAQ />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<HomePage />} />
+          <Route path="products" element={<ProductsPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
